@@ -1,0 +1,12 @@
+Name: user-api
+Host: 0.0.0.0
+Port: 8888
+Mysql:
+  DataSource: root:secret@tcp(localhost:3306)/library_management?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai
+CacheRedis:
+  - Host: 127.0.0.1:6379
+    # Pass: $pass
+    Type: node
+Auth:
+  AccessSecret: fb4182c5af2a38a863055c883dc1107e15b3b1d7764dc5e9cbe187f3bb0c6b5fe02e63ecd963a6c318372d51b97831c678b8958fdec318c1600e32ba8dea53e1
+  AccessExpire: 86400
